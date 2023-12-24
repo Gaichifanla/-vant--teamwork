@@ -1,0 +1,12 @@
+<!--components/cell-box/cell-box.wxml-->
+<!-- cell.wxml -->
+<!-- cell.wxml -->
+<view class="cell">
+  <checkbox class="checkbox" value="{{checked}}" bindchange="onCheckboxChange">
+    <view class="checkbox-icon"></view>
+  </checkbox>
+  <view class="content">
+    <slot></slot>
+  </view>
+</view>
+

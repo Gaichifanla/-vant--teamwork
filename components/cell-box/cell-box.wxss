@@ -1,0 +1,43 @@
+/* cell.wxss */
+.cell {
+    display: flex;
+    align-items: center;
+    padding: 16rpx;
+    border-bottom: 1rpx solid #e5e5e5;
+  }
+  
+  .checkbox {
+    margin-right: 16rpx;
+  }
+  
+  .checkbox-icon {
+    width: 32rpx;
+    height: 32rpx;
+    border: 1rpx solid #007AFF;
+    border-radius: 4rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .checkbox-icon::before {
+    content: '';
+    display: block;
+    width: 14rpx;
+    height: 8rpx;
+    border-bottom: 2rpx solid #007AFF;
+    border-right: 2rpx solid #007AFF;
+    transform: rotate(45deg);
+    opacity: 0;
+    transition: opacity 0.3s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  
+  .checkbox:checked .checkbox-icon::before {
+    opacity: 1;
+  }
+  
